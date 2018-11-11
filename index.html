@@ -27,25 +27,43 @@
 		input {
 			padding-right: 1vw;
 			text-align: right;
+			width: 30vw;
 		}
 
 		.wrapper {
 			display: grid;
-			grid-template-columns: 25vw 25vw;
-  			grid-gap: 10px;
+			grid-template-columns: 45vw 45vw;
+  			grid-gap: 5vw;
+		}
+		.inputWrapper {
+			display: inline-block;
+			text-align: right;
+		}
+		input {
+			margin: 0;
+			height: 10vw;
+			border: 2px solid #ccc;
 		}
 		.label {
 			color: #ccc;
 			white-space: nowrap;
-			font-size: 1vw;
+			font-size: 3vw;
+		}
+		.cell:first-child {
+			text-align: right;
+		}
+		.date {
+			border: 2px solid transparent;
+			height: 10w;
+			line-height: 10vw;
 		}
 		.cell, .cell input {
-			font-size: 4vw;
+			font-size: 8vw;
 		}
 
 		a {
 			text-decoration: none;
-			margin-top: 5vh;
+			margin-top: 5vw;
 			color: #aaa;
 			text-align: right
 		}

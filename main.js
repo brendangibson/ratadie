@@ -6686,24 +6686,33 @@ var author$project$Main$view = function (model) {
 				_List_fromArray(
 					[
 						A2(
-						elm$html$Html$input,
-						_List_fromArray(
-							[
-								elm$html$Html$Events$onInput(author$project$Main$InputChanged),
-								elm$html$Html$Attributes$value(
-								elm$core$String$fromInt(model.input)),
-								elm$html$Html$Attributes$size(7)
-							]),
-						_List_Nil),
-						A2(
 						elm$html$Html$div,
 						_List_fromArray(
 							[
-								elm$html$Html$Attributes$class('label')
+								elm$html$Html$Attributes$class('inputWrapper')
 							]),
 						_List_fromArray(
 							[
-								elm$html$Html$text('RataDie')
+								A2(
+								elm$html$Html$input,
+								_List_fromArray(
+									[
+										elm$html$Html$Events$onInput(author$project$Main$InputChanged),
+										elm$html$Html$Attributes$value(
+										elm$core$String$fromInt(model.input)),
+										elm$html$Html$Attributes$size(7)
+									]),
+								_List_Nil),
+								A2(
+								elm$html$Html$div,
+								_List_fromArray(
+									[
+										elm$html$Html$Attributes$class('label')
+									]),
+								_List_fromArray(
+									[
+										elm$html$Html$text('RataDie')
+									]))
 							]))
 					])),
 				A2(
@@ -6716,7 +6725,10 @@ var author$project$Main$view = function (model) {
 					[
 						A2(
 						elm$html$Html$div,
-						_List_Nil,
+						_List_fromArray(
+							[
+								elm$html$Html$Attributes$class('date')
+							]),
 						_List_fromArray(
 							[
 								elm$html$Html$text(
