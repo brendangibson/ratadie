@@ -3,8 +3,53 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Rata Die to Gregorian</title>
-    <script src="main.js"></script>
+	<title>Rata Die to Gregorian</title>
+	<meta name="description" content="Online converter from RataDie to Gregorian calendar dates.">
+	<meta name="keywords" content="ratadie, ratadie, converter, date, elm">
+	<link rel="shortcut icon" type="image/png" href="/favicon.ico"/>
+	<script src="main.js"></script>
+	<style type="text/css">
+
+		body {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			margin: 0;
+		}
+
+		body, input {
+			font-family: sans-serif;
+			font-weight: bold;
+			color: #333;
+		}
+
+		input {
+			padding-right: 1vw;
+			text-align: right;
+		}
+
+		.wrapper {
+			display: grid;
+			grid-template-columns: 25vw 25vw;
+  			grid-gap: 10px;
+		}
+		.label {
+			color: #ccc;
+			white-space: nowrap;
+			font-size: 1vw;
+		}
+		.cell, .cell input {
+			font-size: 4vw;
+		}
+
+		a {
+			text-decoration: none;
+			margin-top: 5vh;
+			color: #aaa;
+			text-align: right
+		}
+	</style>
 </head>
 
 <body>
